@@ -64,7 +64,7 @@ fn precompile(program: String) -> Vec<Instruction> {
 
 /// Interprets the precompiled BF code. Handles inputs and outputs to the terminal.
 fn run(instructions: Vec<Instruction>) {
-    let mut data_list: Vec<u8> = vec![0; 5000];
+    let mut data_list: Vec<u8> = vec![0; 100000];
     let mut data_pointer: usize = 0;
 
     // Executes program stored in instructions vector
