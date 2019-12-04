@@ -56,7 +56,7 @@ fn precompile(program: String) -> Vec<Instruction> {
             '[' => tokens.push(Instruction::LoopStart),
             ']' => tokens.push(Instruction::LoopEnd),
             _ => (),
-		};
+	};
     }
 
     tokens //returns tokens
